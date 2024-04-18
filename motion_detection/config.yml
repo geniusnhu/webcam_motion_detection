@@ -1,0 +1,4 @@
+threshold: 0.006  # Threshold of absolute difference between frames. If the difference exceeds this threshold, motion is detected
+queue_size: 20    # Size of prediction queue
+queue_threshold: 10 # If there are more than 10 'Motion' predictions appear in prediction queue, Motion is alerted 
+n_frames: 15      # Gap between runs. The engine runs every n_frames

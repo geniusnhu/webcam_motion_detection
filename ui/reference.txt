@@ -1,0 +1,3 @@
+https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm
+
+https://docs.streamlit.io/streamlit-community-cloud/share-your-app#share-your-private-app
