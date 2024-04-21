@@ -1,5 +1,5 @@
 import yaml
 
-def load_config():
-    with open('../motion_detection/config.yml', 'r') as file:
+def load_config(config_path):
+    with open(config_path, 'r') as file:
         return yaml.safe_load(file)

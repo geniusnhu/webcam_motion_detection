@@ -1,3 +1,4 @@
 streamlit==1.33.0
 streamlit_webrtc==0.47.1
 opencv-python==4.9.0.80
+pyyaml

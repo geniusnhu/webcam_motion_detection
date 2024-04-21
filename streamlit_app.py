@@ -1,7 +1,7 @@
-import sys, os
-parent_dir = os.getcwd() # find the path to module a
-path = os.path.dirname(parent_dir) # Go up one level to the common parent directory
-sys.path.append(path) # Add the parent to sys.path
+# import sys, os
+# parent_dir = os.getcwd() # find the path to module a
+# path = os.path.dirname(parent_dir) # Go up one level to the common parent directory
+# sys.path.append(path) # Add the parent to sys.path
 
 import streamlit as st
 from streamlit_webrtc import WebRtcMode, webrtc_streamer
@@ -11,6 +11,8 @@ import queue
 
 from utils import get_base64_encoded_audio
 from motion_detection import load_config
+
+
 
 html_string = """ <!DOCTYPE html>
 <html>
@@ -58,7 +60,7 @@ html_string = """ <!DOCTYPE html>
 
 # st.components.v1.html(html_string, height=450)
 
-args = load_config()
+args = load_config('motion_detection/config.yml')
 
 # threshold to detect motion
 threshold = float(args['threshold'])
